@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fidalgo · Ilustração de personagens</title>
+  <meta name="description" content="Portfólio de ilustração digital de personagens. Comissões de busto, meio corpo e corpo inteiro.">
+  <meta name="page-type" content="service">
+  <meta name="site-kind" content="other">
+  <meta name="rating" content="adult">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <!-- Tipo: service (ilustrador que aceita comissões). Ação principal: Pedir uma comissão.
+       Estilo: desenhado à mão, sabor "Recorte colorido" (Caveat + Nunito). -->
+
+  <!-- filtro de tremido: usado só em contornos decorativos, nunca em texto -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <filter id="tremido">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="3" />
+      <feDisplacementMap in="SourceGraphic" scale="3" />
+    </filter>
+  </svg>
+
+  <header class="nav">
+    <div class="wrap nav__in">
+      <a class="skip" href="#galeria">Pular para a galeria</a>
+      <a class="logo" href="#topo" aria-label="Início">
+        <span class="logo__mark" data-cfg="inicial">F</span>
+        <span data-cfg="nome">Fidalgo</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#galeria">Galeria</a>
+        <a href="#comissoes">Comissões</a>
+        <a href="#processo">Processo</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="nav__end">
+        <span class="nav__socials" data-socials-nav></span>
+        <button class="theme-btn" type="button" aria-label="Alternar tema claro/escuro" data-theme-toggle>
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="currentColor"/></svg>
+        </button>
+        <a class="btn btn--primary nav__cta" href="#contato">Pedir comissão</a>
+        <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu>
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sheet" data-sheet hidden>
+    <a href="#galeria">Galeria</a>
+    <a href="#comissoes">Comissões</a>
+    <a href="#processo">Processo</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="pill" data-status><span class="pill__dot"></span><span data-cfg="fato">Comissões abertas</span></p>
+          <h1 data-cfg="titulo">Ilustração de personagens sob encomenda</h1>
+          <p class="lead" data-cfg="subtitulo"></p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#contato">Pedir comissão
+              <svg class="m-arrow" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--secondary" href="#galeria">Ver galeria</a>
+          </div>
+        </div>
+        <div class="hero__art" data-hero-art>
+          <!-- as artes são inseridas por js/main.js; abaixo, só rabiscos decorativos -->
+          <svg class="doodle doodle--star" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 6l6 16 17 1-13 11 4 17-14-9-14 9 4-17L7 23l17-1z"/></svg>
+          <svg class="doodle doodle--swirl" viewBox="0 0 120 60" aria-hidden="true"><path d="M4 40c14-30 40-34 46-14 5 16-14 22-16 8-3-18 30-28 50-16 14 8 22 22 30 30"/></svg>
+          <svg class="doodle doodle--spark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3v10M20 27v10M3 20h10M27 20h10M8 8l6 6M26 26l6 6M32 8l-6 6M14 26l-6 6"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA ROLANTE -->
+    <div class="marquee" data-marquee aria-hidden="true">
+      <div class="marquee__track">
+        <span>Personagens originais</span><span>✦</span><span>Fanart</span><span>✦</span><span>Busto</span><span>✦</span><span>Meio corpo</span><span>✦</span><span>Corpo inteiro</span><span>✦</span><span>Cenários</span><span>✦</span>
+        <span>Personagens originais</span><span>✦</span><span>Fanart</span><span>✦</span><span>Busto</span><span>✦</span><span>Meio corpo</span><span>✦</span><span>Corpo inteiro</span><span>✦</span><span>Cenários</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- GALERIA -->
+    <section class="section" id="galeria">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Galeria de ilustrações. <span class="muted">Clique em uma arte para ver em tela cheia.</span></h2>
+          <label class="switch" data-nsfw-switch>
+            <input type="checkbox" data-nsfw-toggle>
+            <span class="switch__track"><span class="switch__knob"></span></span>
+            <span class="switch__label">Mostrar conteúdo +18</span>
+          </label>
+        </div>
+        <div class="gallery" data-gallery></div>
+      </div>
+    </section>
+
+    <!-- COMISSÕES -->
+    <section class="section section--alt" id="comissoes">
+      <div class="wrap split">
+        <div class="split__text reveal">
+          <h2>Preços de comissão. <span class="muted">Valor final combinado no briefing.</span></h2>
+          <p class="body">Cada pedido inclui esboço para aprovação, até duas rodadas de ajustes e o arquivo final em alta resolução. Pagamento de 50% para começar e 50% na entrega.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#contato">Pedir comissão
+              <svg class="m-arrow" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <ul class="rows reveal" data-prices></ul>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section" id="processo">
+      <div class="wrap">
+        <h2 class="reveal">Do pedido à arte final em quatro etapas.</h2>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__n">01</span>
+            <h3>Briefing</h3>
+            <p>Você conta a ideia, manda referências do personagem e escolhe o formato.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">02</span>
+            <h3>Esboço</h3>
+            <p>Um rascunho da pose e da composição para você aprovar antes da cor.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">03</span>
+            <h3>Cor e luz</h3>
+            <p>Arte-final, cores e iluminação. Até duas rodadas de ajustes incluídas.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">04</span>
+            <h3>Entrega</h3>
+            <p>PNG em alta resolução, pronto para imprimir ou usar como avatar.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section--ink" id="contato">
+      <div class="wrap split">
+        <div class="split__text reveal">
+          <h2>Peça sua comissão.</h2>
+          <p class="body">Descreva o personagem e o formato. A resposta chega por e-mail em até 2 dias úteis.</p>
+          <p class="contact-line">Prefere falar direto? Escolha um canal:</p>
+          <ul class="contact-cards" data-contact-cards></ul>
+        </div>
+        <form class="form reveal" data-form novalidate>
+          <label>Seu nome
+            <input name="nome" required autocomplete="name">
+          </label>
+          <label>Seu e-mail
+            <input name="email" type="email" required autocomplete="email">
+          </label>
+          <label>Formato
+            <select name="formato" data-format-select></select>
+          </label>
+          <label>Descreva a ideia
+            <textarea name="ideia" rows="4" required></textarea>
+          </label>
+          <p class="form__error" data-form-error hidden>Preencha nome, e-mail válido e a ideia.</p>
+          <button class="btn btn--primary btn--full" type="submit">Pedir comissão</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <a class="logo" href="#topo"><span class="logo__mark" data-cfg="inicial">F</span><span data-cfg="nome">Fidalgo</span></a>
+      <ul class="footer__socials" data-socials-footer></ul>
+      <p class="footer__legal">© <span data-year></span> <span data-cfg="nome">Fidalgo</span>. Todas as ilustrações são protegidas; não reproduza sem autorização.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Visualizar ilustração">
+    <button class="lb-btn lb-close" type="button" aria-label="Fechar" data-lb-close>
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Anterior" data-lb-prev>
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lb-figure">
+      <div class="lb-frame" data-lb-frame>
+        <img data-lb-img alt="">
+        <button class="reveal-btn" type="button" data-lb-reveal>Mostrar +18</button>
+      </div>
+      <figcaption class="lb-meta"><strong data-lb-title></strong> <span data-lb-date></span></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" type="button" aria-label="Próxima" data-lb-next>
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <!-- AVISO DE IDADE -->
+  <div class="gate" data-gate hidden role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="gate__box">
+      <span class="logo__mark logo__mark--lg" data-cfg="inicial">F</span>
+      <h2 id="gate-title">Este portfólio tem ilustrações adultas.</h2>
+      <p>Algumas artes mostram nudez. Você tem 18 anos ou mais?</p>
+      <div class="btn-row btn-row--center">
+        <button class="btn btn--primary" type="button" data-gate-yes>Tenho 18 ou mais</button>
+        <button class="btn btn--secondary" type="button" data-gate-no>Ver só artes livres</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

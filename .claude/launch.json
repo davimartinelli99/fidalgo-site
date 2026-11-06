@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\davin\\AppData\\Local\\Temp\\claude\\25b21e66b1689bd6\\0548a860-9c56-4379-b19c-3930b11db722\\scratchpad\\serve.ps1"],
+      "port": 5510
+    }
+  ]
+}
